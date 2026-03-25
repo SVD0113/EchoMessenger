@@ -31,3 +31,13 @@ lsMS 채팅을 Clear로 삭제해줬습니다. 그리고 선택 삭제의 경우
 
 이후엔 배경색을 백지헌 사진과 자연스럽게 하려다보니 어두운 색으로 점차 하게되었고, 제미나이의 도움을 받아서 txtMS의 (여기에 입력하세요)를 포커스가 가면 없어지고 포커스를 다른 곳으로 하면 다시 나오게끔하였고, 또한 메시지를 입력하고 lsMS에 보낼 때 안나오게끔 하였습니다.
 <img width="792" height="474" alt="image" src="https://github.com/user-attachments/assets/03a0fc24-a26f-4d05-943c-c0bdc2fc5a89" />
+
+
+커밋 설명 이름을 잘못 작성하여 GIt-분기기록보기 에서 처음부터 git에 저장된 코드 복구하면서 재 커밋 완료했습니다.
+이전의 기록들은 캡쳐해두었기에 증거자료로 제출합니다
+<img width="2150" height="1606" alt="image" src="https://github.com/user-attachments/assets/92ddef23-e562-4e42-b9d4-72ed61ab693b" />
+
+<img width="1336" height="1364" alt="image" src="https://github.com/user-attachments/assets/f6d8d238-afb9-4ff4-a513-77f70e564f1e" />
+
+
+
