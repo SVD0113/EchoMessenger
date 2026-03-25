@@ -26,16 +26,19 @@ namespace EchoMessenger
             }
 
             // 입력된 메시지 변수에 저장
-            string typed_msg = txtMS.Text;
+            string typed_msg = txtMS.Text.Trim();
+
+            // 타임스탬프 추가
+            string final_msg = $"[{DateTime.Now:HH:mm:ss}] {typed_msg}";
 
             // lbMS에 변수에 저장된 메시지 추가
-            lbMS.Items.Add(typed_msg);
+            lbMS.Items.Add(final_msg);
+
+            // 메시지 카운팅
+            label1.Text = $"현재 대화: {lbMS.Items.Count}개";
 
             // 보낸 tetMS 초기화
             txtMS.Clear();
-
-
-
 
             // 전송하면 다시 txtMS로 포커스 이동
             txtMS.Focus();
@@ -44,6 +47,11 @@ namespace EchoMessenger
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMS_TextChanged(object sender, EventArgs e)
         {
 
         }
