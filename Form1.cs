@@ -1,5 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace EchoMessenger
@@ -14,6 +20,7 @@ namespace EchoMessenger
 
             txtMS.Text = placeholderText;
             txtMS.ForeColor = Color.Gray;
+
 
             // *** enter로 포커스 이동하면 (여기에 입력하세요)가 사라지지않는 문제 해결1
             this.ActiveControl = lbTitle;
@@ -46,11 +53,13 @@ namespace EchoMessenger
             // 메시지 카운팅
             lbTitle.Text = $"현재 대화: {lbMS.Items.Count}개";
 
-            // 보낸 txtMS 초기화
+            // 보낸 tetMS 초기화
             txtMS.Text = "";
 
             // 전송하면 다시 txtMS로 포커스 이동
             txtMS.Focus();
+
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -88,11 +97,25 @@ namespace EchoMessenger
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            /*  // 메시지 선택하면 삭제, 없으면 경고
+            if (lbMS.SelectedIndex.c)
+            {
+                lbMS.Items.RemoveAt(lbMS.SelectedIndex);
+                lbTitle.Text = $"현재 대화: {lbMS.Items.Count}개";
+            }
+            else
+            {
+                MessageBox.Show("삭제할 메시지를 클릭해주세요");
+            } */
+
+
+
             // lbMS.SelectedItems.Count는 '현재 파란색으로 선택된 항목의 개수'입니다.
             // 즉, 1개 이상 선택했다면 삭제를 진행하고, 0개면 경고창을 띄웁니다.
             if (lbMS.SelectedItems.Count > 0)
             {
                 // [핵심 로직] 선택된 항목이 0개가 될 때까지 계속 반복해서 지웁니다.
+                // (반복문 while을 사용하면 여러 개를 한 번에 안전하게 싹 지울 수 있습니다)
                 while (lbMS.SelectedItems.Count > 0)
                 {
                     // 선택된 것들 중 제일 첫 번째(0번)를 리스트박스에서 완전히 지워버립니다.
