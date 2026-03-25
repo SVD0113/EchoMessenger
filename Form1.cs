@@ -16,5 +16,28 @@ namespace EchoMessenger
         {
             InitializeComponent();
         }
+
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+            // 입력된 메시지 변수에 저장
+            string typed_msg = txtMS.Text;
+
+            lbMS.Items.Add(typed_msg);
+
+            txtMS.Clear();
+
+
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMS_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
