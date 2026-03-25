@@ -33,6 +33,13 @@ lsMS 채팅을 Clear로 삭제해줬습니다. 그리고 선택 삭제의 경우
 <img width="792" height="474" alt="image" src="https://github.com/user-attachments/assets/03a0fc24-a26f-4d05-943c-c0bdc2fc5a89" />
 
 
+
+
+
+
+
+
+
 커밋 설명 이름을 잘못 작성하여 GIt-분기기록보기 에서 처음부터 git에 저장된 코드 복구하면서 재 커밋 완료했습니다.
 이전의 기록들은 캡쳐해두었기에 증거자료로 제출합니다
 <img width="2150" height="1606" alt="image" src="https://github.com/user-attachments/assets/92ddef23-e562-4e42-b9d4-72ed61ab693b" />
