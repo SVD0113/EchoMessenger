@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.lbMS = new System.Windows.Forms.ListBox();
@@ -77,7 +76,7 @@
             this.txtMS.Size = new System.Drawing.Size(371, 21);
             this.txtMS.TabIndex = 3;
             this.txtMS.Text = "(여기에 입력하세요)";
-            this.txtMS.TextChanged += new System.EventHandler(this.txtMS_TextChanged);
+            this.txtMS.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMS_KeyDown);
             // 
             // btnSend
             // 
@@ -117,3 +116,4 @@
         private System.Windows.Forms.Button btnSend;
     }
 }
+~
